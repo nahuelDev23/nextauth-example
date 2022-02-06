@@ -1,6 +1,6 @@
-import { useSession, signOut,signIn } from "next-auth/react";
+import { useSession, signOut,signIn,getSession } from "next-auth/react";
 import Image from "next/image";
-import NavLink from 'next/link'
+
 const Layout = ({ children }) => {
     const { data: session } = useSession()
     return (
