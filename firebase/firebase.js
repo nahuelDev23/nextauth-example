@@ -6,15 +6,16 @@ const firebaseConfig = {
 
     apiKey: "AIzaSyBhnIz8nyhmbuhREcpIFMsKQZ4el4E9ZG0",
 
-    authDomain: "next-auth-example-d83b8.firebaseapp.com",
+  authDomain: "next-auth-example-d83b8.firebaseapp.com",
 
-    projectId: "next-auth-example-d83b8",
+  projectId: "next-auth-example-d83b8",
 
-    storageBucket: "next-auth-example-d83b8.appspot.com",
+  storageBucket: "next-auth-example-d83b8.appspot.com",
 
-    messagingSenderId: "532236949591",
+  messagingSenderId: "532236949591",
 
-    appId: "1:532236949591:web:4b59981eeaee40347a6b12"
+  appId: "1:532236949591:web:4b59981eeaee40347a6b12"
+
 
 };
 

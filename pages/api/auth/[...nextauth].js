@@ -9,21 +9,22 @@ export default NextAuth({
       clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
     }),
   ],
-  pages:{
+  pages: {
     signIn: "/auth/signin",
 
   },
   theme: {
-      logo: "https://nextjs.org/static/images/logo-black.svg",
-      brandColor: "#000000",
-      colorScheme: "dark",
+    logo: "https://nextjs.org/static/images/logo-black.svg",
+    brandColor: "#000000",
+    colorScheme: "dark",
   },
-  callbacks:{
-    async session({session,user,token}){
+  secret: process.env.NEXTAUTH_SECRET,
+  callbacks: {
+    async session({ session, user, token }) {
       session.user.username = session.user.name
-      .split(' ')
-      .join('')
-      .toLocaleLowerCase();
+        .split(' ')
+        .join('')
+        .toLocaleLowerCase();
 
       session.user.uid = token.sub;
       return session

@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
                             alt={`Foto de perfil del usuario ${session?.user?.name}`}
                             width={75}
                             height={75} />
+                            <div>{session?.user?.uid}</div>
                         <button onClick={signOut}>singOut</button>
                     </>
                     :
